@@ -1,0 +1,172 @@
+.container {
+    width: 806px;
+    height: 100%;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+
+    #searchWeather {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 48px;
+            margin: 50px 0;
+            color: #505050;
+            
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            input {
+                padding: 8px;
+                height: 40px;
+                width: 264px;
+                border-top: 1px solid #505050;
+                border-right: 0 ;
+                border-bottom: 1px solid #505050;
+                border-left: 1px solid #505050;
+    
+                border-radius: 8px 0 0 8px;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+    
+            button {
+                height: 40px;
+                width: 64px;
+                background-color: white;
+                border-top: 1px solid #505050;
+                border-right: 1px solid #505050;
+                border-bottom: 1px solid #505050;
+                border-left: 0 ;
+    
+                border-radius: 0 8px 8px 0;
+
+    
+                img {
+                    padding: 2px;
+                    height: 32px;
+                    width: 32px;
+                }
+                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        main {
+            width: 550px;
+            height: 320px;
+            background-color: #D4D4D4;
+            margin-top: 50px;
+            border-radius: 8px;
+            padding: 8px;
+            position: relative;
+            
+
+            p {
+                font-size: 14px;
+                margin: 5px 30px;
+            }
+
+            h1 {
+                font-size: 40px;
+                color: #505050;
+                margin: 20px 30px;
+            }
+
+            span {
+                color: #505050;
+                position: absolute;
+                right: 8px;
+                top: 8px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                
+            }
+            fieldset {
+                color: #505050;
+                border: 0;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                span {
+                    width: 25%;
+                    position: static;
+                    display: flex;
+                    align-items: center;
+                    margin: 15px 0 30px 30px;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        color: #505050;
+                    }
+                    p {
+                        
+                        font-size: 16px;
+                        margin: 0 0 0 5px;
+                    }
+                }
+                
+                
+            }
+            
+        }
+        
+    }
+}
+
+@media(min-width:320px) and (max-width:480px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    
+        #searchWeather {
+            width: 100%;
+
+            h1 {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            form {
+                input {
+                    width: 75%;
+                }
+            }
+            main {
+                width: 90%;
+                height: 100%;
+
+                fieldset {
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    padding: 8px;
+                    span {
+                        padding: 8px;
+                        margin: 15px 0px 15px 0px;
+                        justify-content: space-around;
+                        width: 100%;
+                        border-bottom: 2px solid #505050;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
